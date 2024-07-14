@@ -1,0 +1,68 @@
+.my-nav{
+    /* margin-left:10px ; */
+    width: 80px;
+    height: 100%;
+background-color: white;
+
+}
+div{
+    overflow: hidden;
+}
+
+li{
+    list-style: none;
+    cursor: pointer;
+}
+
+body{
+    background-color: rgb(13, 13, 13);
+}
+
+p,h1,h2,h3,ul,.my-sidenav i{
+    color: white;
+}
+
+.ull{
+   display: none; 
+}
+.my-sidenav{
+    display: flex;
+    background-color: rgb(13, 13, 13);
+    /* position: absolute; */
+    /* left:-50%; */
+    width: 200px;
+    height: 100%;
+}
+i{
+    cursor: pointer;
+}
+.main{
+    left: -200px;
+}
+.layer{
+    transition: all 0.5s;
+    inset: 0;
+    transform: translateY(105%);
+    background-color: rgba(255,255, 255, 0.5);
+}
+img{
+    object-fit: cover;
+}
+
+.data:hover .layer{
+transform: translateY(0);
+}
+.loading-screen{
+    z-index: 999;
+    display: flex;
+}
+
+.inner-loading-screen{
+    position: absolute;
+    z-index: 9;
+    background-color: #0D0D0D;
+    display: flex;
+}
+.inner-loading-screen i{
+    color: white;
+}
